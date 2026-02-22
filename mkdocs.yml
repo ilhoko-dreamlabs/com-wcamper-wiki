@@ -179,4 +179,6 @@ markdown_extensions:
 extra_javascript:
   - assets/share.js
 
+hooks:
+  - hooks/autolink_glossary.py
 
