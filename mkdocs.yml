@@ -1,0 +1,36 @@
+site_name: WCAMPER Wiki
+site_description: 캠핑·오버랜딩 용어를 운영 가능한 정의로 정리합니다.
+site_url: https://wiki.wcamper.com/
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - content.action.edit
+    - search.highlight
+    - search.suggest
+  palette:
+    - scheme: default
+
+repo_url: https://github.com/ilhoko-dreamlabs/com-wcamper-wiki
+edit_uri: edit/main/docs/
+
+nav:
+  - 홈: index.md
+  - 용어사전:
+      - 오버랜딩: glossary/overlanding.md
+      - 오프로드: glossary/offroad.md
+      - 오지: glossary/remote.md
+      - 노지: glossary/nondesignated.md
+  - 개념 프레임:
+      - 축 정리: concepts/axes.md
+      - 태그 체계: concepts/tags.md
+  - 기여/피드백:
+      - 의견 보내기: contribute/feedback.md
+      - 기여 가이드: contribute/guide.md
+
+extra_css:
+  - assets/custom.css
