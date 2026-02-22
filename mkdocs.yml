@@ -165,6 +165,13 @@ nav:
 
       - 오버랜딩 세팅 SOP: operations/overlanding-setup-sop.md
 
+  - 차량(오버랜딩 리그):
+      - 개요: rigs/index.md
+      - 차량 선정 프레임: concepts/vehicle-selection.md
+      - Jeep Wrangler Rubicon: rigs/jeep-wrangler-rubicon.md
+      - Ford Ranger: rigs/ford-ranger.md
+      - KGM Rexton: rigs/kgm-rexton.md
+
   - 기여/피드백:
       - 의견 보내기: contribute/feedback.md
       - 기여 가이드: contribute/guide.md
@@ -181,4 +188,5 @@ extra_javascript:
 
 hooks:
   - hooks/autolink_glossary.py
+
 
