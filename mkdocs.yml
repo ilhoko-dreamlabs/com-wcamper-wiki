@@ -58,6 +58,17 @@ nav:
           - 물 시스템: glossary/water-system.md
           - 네비/트랙 (GPX·오프라인): glossary/navigation.md
           - 캠프 선정 기준: glossary/camp-selection.md
+      - 오버랜딩 세팅:
+          - 세팅/빌드/리그: glossary/overlanding-setup-build.md
+          - 무게/하중: glossary/overlanding-setup-weight.md
+          - 구동계/도하: glossary/overlanding-setup-drivetrain.md
+          - 서스/아머: glossary/overlanding-setup-suspension-armor.md
+          - 타이어/공기압: glossary/overlanding-setup-tires-air.md
+          - 리커버리: glossary/overlanding-setup-recovery.md
+          - 적재/수납: glossary/overlanding-setup-storage.md
+          - 전력 시스템: glossary/overlanding-setup-power.md
+          - 물/위생: glossary/overlanding-setup-water-hygiene.md
+
       - 캠핑:
           - 오토캠핑: glossary/auto-camping.md
           - 차박: glossary/car-sleeping.md
@@ -152,6 +163,8 @@ nav:
       - 역할(리드/스윕/스팟터): operations/route-roles.md
       - 경계 케이스 대응: operations/borderline-compliance.md
 
+      - 오버랜딩 세팅 SOP: operations/overlanding-setup-sop.md
+
   - 기여/피드백:
       - 의견 보내기: contribute/feedback.md
       - 기여 가이드: contribute/guide.md
@@ -165,4 +178,5 @@ markdown_extensions:
 
 extra_javascript:
   - assets/share.js
+
 
