@@ -78,6 +78,36 @@ nav:
           - 리빙쉘: glossary/living-shell.md
           - 매너타임: glossary/manners-time.md
           - CO 안전(일산화탄소): glossary/co-safety.md
+  - 장소/정책:
+      - 캠핑장·야영장·글램핑 구분: policy/camping-vs-campsite-vs-glamping.md
+      - 지정 야영(국공립): policy/designated-camping.md
+      - 사이트 정책(인원/차량/텐트 수): policy/site-policy-people-vehicles.md
+      - 전기 사용 정책: policy/power-policy.md
+      - 화로대/불멍 정책: policy/firepit-policy.md
+      - 발전기 정책: policy/generator-policy.md
+      - 애견동반 정책: policy/pet-policy.md
+      - 키즈/노키즈 정책: policy/kids-policy.md
+      - 체크인/체크아웃/연장: policy/checkin-checkout.md
+      - 취소/환불/노쇼: policy/cancel-refund.md
+      - 지면별 셋업 팁: policy/ground-setup-tips.md
+      - 주차/진입/회차/대형차: policy/parking-access.md
+      - 하천/해변/산지 리스크: policy/terrain-types-risk.md
+      - 사유지/국유지/공유지(리스크): policy/land-ownership-risk.md
+      - 노지 표기 가이드: policy/nondesignated-labeling.md
+
+  - 안전/리스크:
+      - CO 사고 패턴 & 체크리스트: safety/co-patterns.md
+      - 환기/결로 실전 가이드: safety/ventilation-condensation.md
+      - 동파 대응: safety/freeze-prevention.md
+      - 강풍 셋업 안전: safety/wind-safety.md
+      - 우천 배수/침수 리스크: safety/rain-drainage.md
+      - 화재 예방: safety/fire-prevention.md
+      - 발전기/연료 안전: safety/fuel-generator-safety.md
+      - 야생동물/벌레 대응: safety/wildlife-insects.md
+      - 응급상황 플레이북: safety/emergency-playbook.md
+      - 리스크 태그 매트릭스: safety/risk-matrix.md
+
   - 기여/피드백:
       - 의견 보내기: contribute/feedback.md
       - 기여 가이드: contribute/guide.md
+
