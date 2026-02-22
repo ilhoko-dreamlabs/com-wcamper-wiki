@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{# 4-1) 브라우저 타이틀도 "페이지 제목" 우선 #}
+{% block htmltitle %}
+  {% if page and page.title and not page.is_homepage %}
+    <title>{{ page.title | striptags }}</title>
+  {% else %}
+    <title>{{ config.site_name }}</title>
+  {% endif %}
+{% endblock %}
+
+{# 4-2) SEO + Social Preview + AI 친화 메타 #}
+{% block extrahead %}
+  {{ super() }}
+
+  {% set ptitle = config.site_name %}
+  {% if page and page.title and not page.is_homepage %}
+    {% set ptitle = page.title | striptags %}
+  {% elif page and page.meta and page.meta.title %}
+    {% set ptitle = page.meta.title %}
+  {% endif %}
+
+  {% set pdesc = config.site_description %}
+  {% if page and page.meta and page.meta.description %}
+    {% set pdesc = page.meta.description %}
+  {% endif %}
+
+  <meta name="description" content="{{ pdesc }}" />
+  <meta name="robots" content="index,follow" />
+
+  {% if page and page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url }}" />
+    <meta property="og:url" content="{{ page.canonical_url }}" />
+  {% endif %}
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+  <meta property="og:title" content="{{ ptitle }}" />
+  <meta property="og:description" content="{{ pdesc }}" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{ ptitle }}" />
+  <meta name="twitter:description" content="{{ pdesc }}" />
+
+  {# JSON-LD (WebSite/WebPage) #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{{ 'WebSite' if page and page.is_homepage else 'WebPage' }}",
+    "name": "{{ config.site_name }}",
+    "description": "{{ config.site_description }}",
+    {% if page and page.canonical_url %}
+    "url": "{{ page.canonical_url }}",
+    {% else %}
+    "url": "{{ config.site_url }}",
+    {% endif %}
+    {% if page and page.title and not page.is_homepage %}
+    "headline": "{{ page.title | striptags }}",
+    {% endif %}
+    "inLanguage": "ko-KR"
+  }
+  </script>
+{% endblock %}

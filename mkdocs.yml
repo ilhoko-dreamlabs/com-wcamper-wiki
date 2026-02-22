@@ -3,14 +3,14 @@ site_description: 캠핑·오버랜딩 용어를 운영 가능한 정의로 정�
 site_url: https://wiki.wcamper.com/
 
 theme:
+  favicon: assets/favicon.svg
+  custom_dir: overrides
   name: material
   language: ko
   features:
     - navigation.instant
     - navigation.sections
-    - navigation.top
-    - content.action.edit
-    - search.highlight
+    - navigation.top    - search.highlight
     - search.suggest
   palette:
     - scheme: default
@@ -155,4 +155,13 @@ nav:
       - 의견 보내기: contribute/feedback.md
       - 기여 가이드: contribute/guide.md
 
+
+
+markdown_extensions:
+  - meta
+  - attr_list
+  - md_in_html
+
+extra_javascript:
+  - assets/share.js
 
