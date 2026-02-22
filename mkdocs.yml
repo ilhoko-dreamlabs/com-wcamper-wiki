@@ -10,16 +10,17 @@ theme:
   features:
     - navigation.instant
     - navigation.sections
-    - navigation.top    - search.highlight
+    - navigation.top
+    - search.highlight
     - search.suggest
   palette:
     - scheme: default
 
 repo_url: https://github.com/ilhoko-dreamlabs/com-wcamper-wiki
-edit_uri: edit/main/docs/
 
 extra_css:
   - assets/custom.css
+  - assets/share.css
 
 nav:
   - 홈: index.md
