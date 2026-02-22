@@ -16,3 +16,13 @@ description: 오버랜딩에 적합한 차량(리그) 후보를 미션 프로필
 - [KGM Rexton](kgm-rexton.md) — VALUE/FAMILY(로우레인지 기반)
 
 > 모델/트림/가용성은 국가/연도에 따라 바뀔 수 있으니, 본 위키는 **프레임+세팅 관점**을 우선합니다.
+
+- [Toyota Land Cruiser](toyota-land-cruiser.md)
+- [Lexus GX](lexus-gx.md)
+- [Land Rover Defender](land-rover-defender.md)
+- [Ford Bronco](ford-bronco.md)
+- [Suzuki Jimny](suzuki-jimny.md)
+- [Jeep Gladiator](jeep-gladiator.md)
+- [Toyota Hilux](toyota-hilux.md)
+- [Toyota 4Runner](toyota-4runner.md)
+- [Mercedes Sprinter (4x4/AWD)](mercedes-sprinter-4x4.md)

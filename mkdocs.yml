@@ -171,6 +171,16 @@ nav:
       - Jeep Wrangler Rubicon: rigs/jeep-wrangler-rubicon.md
       - Ford Ranger: rigs/ford-ranger.md
       - KGM Rexton: rigs/kgm-rexton.md
+      - Toyota Land Cruiser: rigs/toyota-land-cruiser.md
+      - Lexus GX: rigs/lexus-gx.md
+      - Land Rover Defender: rigs/land-rover-defender.md
+      - Ford Bronco: rigs/ford-bronco.md
+      - Suzuki Jimny: rigs/suzuki-jimny.md
+      - Jeep Gladiator: rigs/jeep-gladiator.md
+      - Toyota Hilux: rigs/toyota-hilux.md
+      - Toyota 4Runner: rigs/toyota-4runner.md
+      - Mercedes Sprinter (4x4/AWD): rigs/mercedes-sprinter-4x4.md
+
 
   - 기여/피드백:
       - 의견 보내기: contribute/feedback.md
@@ -188,5 +198,6 @@ extra_javascript:
 
 hooks:
   - hooks/autolink_glossary.py
+
 
 
