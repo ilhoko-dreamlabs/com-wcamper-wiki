@@ -107,7 +107,51 @@ nav:
       - 응급상황 플레이북: safety/emergency-playbook.md
       - 리스크 태그 매트릭스: safety/risk-matrix.md
 
+  - 장비/셋업:
+      - 수면 시스템(개요): gear/sleep-system.md
+      - 침낭 온도 표기: gear/sleeping-bag-ratings.md
+      - 매트 R-value: gear/r-value-mats.md
+      - 코트/필로우: gear/pillow-cot.md
+      - 결로 대응 셋업: gear/condensation-setup.md
+      - 텐트 타입: gear/tent-types.md
+      - 쉘터 vs 리빙쉘: gear/shelter-vs-livingshell.md
+      - 타프 셋업: gear/tarp-setups.md
+      - 팩/가이라인: gear/stakes-guylines.md
+      - 매듭/하드웨어: gear/knots-hardware.md
+      - 난방 비교: gear/heaters-compare.md
+      - 환기 설계: gear/ventilation-design.md
+      - 랜턴 가이드: gear/lantern-lumens.md
+      - 전력 기본: gear/power-basics.md
+      - 조리 시스템: gear/cooking-system.md
+      - 쿨러/식자재: gear/cooler-food.md
+      - 물 정수/위생: gear/water-filtration.md
+      - 배변/처리: gear/toilet-waste.md
+      - 수납/적재: gear/packing-loading.md
+
+  - 스팟/환경·루트 운영:
+      - 스팟 선정 체크리스트: operations/spot-selection.md
+      - 하천 스팟 운영: operations/river-spots.md
+      - 해변 스팟 운영: operations/beach-spots.md
+      - 산지 스팟 운영: operations/mountain-spots.md
+      - 임도/비포장 운용: operations/forest-road-ops.md
+      - 도심 근교 스팟: operations/urban-edge-spots.md
+      - 기상 브리핑 루틴: operations/weather-briefing.md
+      - 조석/수위 체크: operations/tide-waterlevel.md
+      - 탈출로 설계: operations/escape-routes.md
+      - 야간 운용: operations/night-driving.md
+      - 컨보이 기본: operations/convoy-basics.md
+      - 무전 프로토콜: operations/radio-protocol.md
+      - 체크인 스케줄: operations/checkin-schedule.md
+      - GPX/오프라인 지도: operations/gpx-offline.md
+      - 페이스/스테이징: operations/pace-staging.md
+      - 리커버리 SOP: operations/recovery-sop.md
+      - 사고/분쟁 기록: operations/incident-log.md
+      - 환경·트레일 매너: operations/leave-no-trace.md
+      - 역할(리드/스윕/스팟터): operations/route-roles.md
+      - 경계 케이스 대응: operations/borderline-compliance.md
+
   - 기여/피드백:
       - 의견 보내기: contribute/feedback.md
       - 기여 가이드: contribute/guide.md
+
 

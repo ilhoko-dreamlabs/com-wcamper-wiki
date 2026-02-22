@@ -12,3 +12,7 @@
 ## 운영 원칙(요약)
 - 정의는 템플릿(한줄/포함·제외/판정/오해/비교/태그/이력)으로 관리합니다.
 - 익명 의견은 수집하되, 본문 반영은 운영진이 결정하고 변경 이력을 남깁니다.
+
+## 추가 가이드(운영용)
+- **장비/셋업**: [수면 시스템](gear/sleep-system.md) / [결로 대응](gear/condensation-setup.md) / [난방 비교](gear/heaters-compare.md)
+- **스팟/루트 운영**: [스팟 선정](operations/spot-selection.md) / [컨보이 기본](operations/convoy-basics.md) / [리커버리 SOP](operations/recovery-sop.md)
