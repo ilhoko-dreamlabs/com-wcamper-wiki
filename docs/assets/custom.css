@@ -1,18 +1,11 @@
 :root {
-  --md-primary-fg-color:        #0f766e;
-  --md-accent-fg-color:         #0f766e;
+  --md-primary-fg-color: #0f766e;
+  --md-accent-fg-color: #0f766e;
 }
+.md-typeset h1 { letter-spacing: -0.04em; }
+.md-typeset p, .md-typeset li { color: #334155; line-height: 1.85; }
 .md-header, .md-tabs {
   background: rgba(255,255,255,.92) !important;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #e2e8f0;
 }
-.md-header__title, .md-header__button {
-  color: #0f172a !important;
-}
-.md-search__input {
-  border-radius: 999px !important;
-}
-.md-typeset h1 { letter-spacing: -0.04em; }
-.md-typeset p, .md-typeset li { color: #334155; line-height: 1.85; }
-.md-main__inner { padding-top: 1.2rem; }

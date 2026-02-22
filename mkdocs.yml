@@ -18,19 +18,66 @@ theme:
 repo_url: https://github.com/ilhoko-dreamlabs/com-wcamper-wiki
 edit_uri: edit/main/docs/
 
+extra_css:
+  - assets/custom.css
+
 nav:
   - 홈: index.md
-  - 용어사전:
-      - 오버랜딩: glossary/overlanding.md
-      - 오프로드: glossary/offroad.md
-      - 오지: glossary/remote.md
-      - 노지: glossary/nondesignated.md
   - 개념 프레임:
-      - 축 정리: concepts/axes.md
-      - 태그 체계: concepts/tags.md
+      - 위키 운영 원칙: concepts/why-wiki.md
+      - 3축 프레임: concepts/axes.md
+      - 판정 트리: concepts/decision-tree.md
+      - 태그 표준: concepts/tags.md
+      - 규정 리스크 프레임: concepts/compliance-risk.md
+      - 동계 리스크 프레임: concepts/winter-risk.md
+      - 화기/취사 프레임: concepts/fire-cooking.md
+      - 차량 기반 캠핑 매트릭스: concepts/vehicle-matrix.md
+      - 셋업 레이어(장비): concepts/setup-layer.md
+      - 커뮤니티 운영 규칙: concepts/community-rules.md
+  - 용어사전:
+      - 오버랜딩:
+          - 오버랜딩 (Overlanding): glossary/overlanding.md
+          - 오프로드 (Off-road): glossary/offroad.md
+          - 루트형 vs 베이스캠프형: glossary/route-styles.md
+          - 익스페디션 (Expedition): glossary/expedition.md
+          - 트레일 (Trail): glossary/trail.md
+          - 임도 (Forest road): glossary/forest-road.md
+          - 비포장/자갈길 (Gravel): glossary/gravel-road.md
+          - AWD vs 4WD: glossary/4wd-awd.md
+          - 로우레인지 (Low range): glossary/low-range.md
+          - 디프락 (Diff lock): glossary/diff-lock.md
+          - 리커버리 (Recovery): glossary/recovery.md
+          - 윈치 (Winch): glossary/winch.md
+          - 트랙션보드: glossary/traction-boards.md
+          - 페이로드 (Payload): glossary/payload.md
+          - 토잉(견인): glossary/towing.md
+          - 루프탑 텐트 (RTT): glossary/rooftop-tent.md
+          - 자급 (Self-sufficiency): glossary/self-sufficiency.md
+          - 전력 시스템: glossary/power-system.md
+          - 물 시스템: glossary/water-system.md
+          - 네비/트랙 (GPX·오프라인): glossary/navigation.md
+          - 캠프 선정 기준: glossary/camp-selection.md
+      - 캠핑:
+          - 오토캠핑: glossary/auto-camping.md
+          - 차박: glossary/car-sleeping.md
+          - 백패킹: glossary/backpacking.md
+          - 데이캠핑(캠크닉): glossary/day-camping.md
+          - 솔캠: glossary/solo-camping.md
+          - 가족캠핑: glossary/family-camping.md
+          - 장박: glossary/long-stay.md
+          - 동계캠핑: glossary/winter-camping.md
+          - 사이트: glossary/campsite.md
+          - 전기사이트: glossary/electric-site.md
+          - 데크 사이트: glossary/deck-site.md
+          - 파쇄석 사이트: glossary/gravel-site.md
+          - 글램핑: glossary/glamping.md
+          - 카라반: glossary/caravan.md
+          - 캠핑카: glossary/campervan.md
+          - 쉘터: glossary/shelter.md
+          - 타프: glossary/tarp.md
+          - 리빙쉘: glossary/living-shell.md
+          - 매너타임: glossary/manners-time.md
+          - CO 안전(일산화탄소): glossary/co-safety.md
   - 기여/피드백:
       - 의견 보내기: contribute/feedback.md
       - 기여 가이드: contribute/guide.md
-
-extra_css:
-  - assets/custom.css
