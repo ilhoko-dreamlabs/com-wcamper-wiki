@@ -16,8 +16,6 @@ theme:
   palette:
     - scheme: default
 
-repo_url: https://github.com/ilhoko-dreamlabs/com-wcamper-wiki
-
 extra_css:
   - assets/custom.css
   - assets/share.css
