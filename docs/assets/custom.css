@@ -71,3 +71,22 @@
 .md-footer-meta__inner{
   border-top: 1px solid rgba(15,23,42,.10);
 }
+
+/* ================================
+   WCAMPER FOOTER POWERED BY LINK
+   ================================ */
+.wc-powered-by__link{
+  display:inline-flex;
+  align-items:center;
+  border-radius: 10px;
+}
+.wc-powered-by__link:focus-visible{
+  outline: 3px solid rgba(15,118,110,.35);
+  outline-offset: 3px;
+}
+.wc-powered-by__link:hover .wc-powered-by__logo{
+  transform: translateY(-1px);
+}
+.wc-powered-by__logo{
+  transition: transform .12s ease;
+}
