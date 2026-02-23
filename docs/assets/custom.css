@@ -43,3 +43,31 @@
 .md-search__input{
   border-radius: 999px !important;
 }
+
+/* ================================
+   WCAMPER FOOTER POWERED BY
+   ================================ */
+.wc-powered-by{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  padding-top:6px;
+}
+.wc-powered-by__text{
+  font-weight:700;
+  color:#0f172a;
+  letter-spacing:-0.01em;
+}
+.wc-powered-by__logo{
+  height:22px;
+  width:auto;
+  display:inline-block;
+  vertical-align:middle;
+  /* 배경 대비 문제 대응(로고가 어두우면 안 보이는 케이스 방지) */
+  filter: drop-shadow(0 2px 6px rgba(15,23,42,.18));
+}
+.md-footer-meta,
+.md-footer-meta__inner{
+  border-top: 1px solid rgba(15,23,42,.10);
+}

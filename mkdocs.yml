@@ -217,7 +217,6 @@ extra_javascript:
 hooks:
   - hooks/autolink_glossary.py
 
-
-
-
+extra:
+  generator: false
 
