@@ -195,6 +195,12 @@ nav:
       - 의료/외상 키트 레벨: team-kit/medical-kit-levels.md
       - 공용 캠프 운영: team-kit/camp-ops-shared.md
       - 역할/체크인/로그: team-kit/roles-checkin-log.md
+      - 표준 키트(2대 기준): team-kit/standard-kit-2-vehicles.md
+      - 표준 키트(5대 기준): team-kit/standard-kit-5-vehicles.md
+      - 표준 키트(10대 기준): team-kit/standard-kit-10-vehicles.md
+      - 출발 전 브리핑 템플릿: team-kit/ops-briefing-template.md
+      - 역할 배정 시트: team-kit/role-assignment-sheet.md
+      - 장비 원장 템플릿: team-kit/equipment-ledger-template.md
 
   - 기여/피드백:
       - 의견 보내기: contribute/feedback.md
@@ -212,6 +218,7 @@ extra_javascript:
 
 hooks:
   - hooks/autolink_glossary.py
+
 
 
 
