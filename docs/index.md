@@ -19,3 +19,6 @@
 
 ## 차량(오버랜딩 리그)
 - [차량 섹션](rigs/index.md) / [차량 선정 프레임](concepts/vehicle-selection.md)
+
+## 팀 공용 장비(컨보이)
+- [공용 장비/운영 표준](team-kit/index.md)

@@ -182,6 +182,20 @@ nav:
       - Mercedes Sprinter (4x4/AWD): rigs/mercedes-sprinter-4x4.md
 
 
+  - 팀 공용 장비(컨보이):
+      - 개요: team-kit/index.md
+      - CB 라디오 기본: team-kit/cb-basics.md
+      - 무전 프로토콜: team-kit/radio-protocol.md
+      - 안테나/SWR 기초: team-kit/antenna-swr.md
+      - 오프라인 지도/GPX 표준: team-kit/gpx-offline-standard.md
+      - 위성 메신저/SOS(개념): team-kit/satellite-messenger.md
+      - 팀 리커버리 키트 표준: team-kit/recovery-kit-standard.md
+      - 리커버리 SOP(팀): team-kit/team-recovery-sop.md
+      - 전력/점프/부스터 표준: team-kit/power-jump-standard.md
+      - 의료/외상 키트 레벨: team-kit/medical-kit-levels.md
+      - 공용 캠프 운영: team-kit/camp-ops-shared.md
+      - 역할/체크인/로그: team-kit/roles-checkin-log.md
+
   - 기여/피드백:
       - 의견 보내기: contribute/feedback.md
       - 기여 가이드: contribute/guide.md
@@ -198,6 +212,7 @@ extra_javascript:
 
 hooks:
   - hooks/autolink_glossary.py
+
 
 
 
