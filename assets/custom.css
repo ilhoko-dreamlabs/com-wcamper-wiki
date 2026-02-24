@@ -1,0 +1,92 @@
+:root {
+  --md-primary-fg-color: #0f766e;
+  --md-accent-fg-color: #0f766e;
+}
+.md-typeset h1 { letter-spacing: -0.04em; }
+.md-typeset p, .md-typeset li { color: #334155; line-height: 1.85; }
+.md-header, .md-tabs {
+  background: rgba(255,255,255,.92) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* ================================
+   WCAMPER ICON CONTRAST FIX
+   ================================ */
+:root{
+  --md-default-fg-color: #0f172a;
+  --md-default-fg-color--light: #334155;
+  --md-default-fg-color--lighter: #64748b;
+  --md-default-fg-color--lightest: #94a3b8;
+  --md-primary-fg-color: #0f766e;
+  --md-accent-fg-color: #0f766e;
+}
+
+.md-header, .md-tabs{
+  background: rgba(255,255,255,.92) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(15,23,42,.10);
+}
+
+.md-header__title, .md-tabs__link{
+  color: #0f172a !important;
+}
+
+.md-header__button, .md-header__button .md-icon,
+.md-header__button svg, .md-search__icon svg,
+.md-tabs__link svg, .md-nav__link svg{
+  color: #0f172a !important;
+  fill: currentColor !important;
+  opacity: 0.92 !important;
+}
+
+.md-search__input{
+  border-radius: 999px !important;
+}
+
+/* ================================
+   WCAMPER FOOTER POWERED BY
+   ================================ */
+.wc-powered-by{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  padding-top:6px;
+}
+.wc-powered-by__text{
+  font-weight:700;
+  color:#0f172a;
+  letter-spacing:-0.01em;
+}
+.wc-powered-by__logo{
+  height:1em;
+  width:auto;
+  display:inline-block;
+  vertical-align:middle;
+  /* 배경 대비 문제 대응(로고가 어두우면 안 보이는 케이스 방지) */
+  filter: drop-shadow(0 2px 6px rgba(15,23,42,.18));
+}
+.md-footer-meta,
+.md-footer-meta__inner{
+  border-top: 1px solid rgba(15,23,42,.10);
+}
+
+/* ================================
+   WCAMPER FOOTER POWERED BY LINK
+   ================================ */
+.wc-powered-by__link{
+  display:inline-flex;
+  align-items:center;
+  border-radius: 10px;
+}
+.wc-powered-by__link:focus-visible{
+  outline: 3px solid rgba(15,118,110,.35);
+  outline-offset: 3px;
+}
+.wc-powered-by__link:hover .wc-powered-by__logo{
+  transform: translateY(-1px);
+}
+.wc-powered-by__logo{
+  transition: transform .12s ease;
+}
