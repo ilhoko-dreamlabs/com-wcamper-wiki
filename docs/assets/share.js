@@ -22,8 +22,9 @@
   }
 
   function buildSharebar() {
+    const contentInner = document.querySelector(".md-content__inner");
     const h1 = document.querySelector(".md-content__inner h1");
-    if (!h1) return;
+    if (!contentInner || !h1) return;
     if (document.querySelector(".wc-sharebar")) return;
 
     const title = safeText(h1.textContent) || safeText(document.title);
@@ -69,7 +70,12 @@
       <span class="wc-sharebtn__hint">미리보기 제목은 페이지 제목으로 노출됩니다.</span>
     `;
 
-    h1.insertAdjacentElement("afterend", bar);
+    const sourceMeta = contentInner.querySelector(".md-source-file");
+    if (sourceMeta) {
+      sourceMeta.insertAdjacentElement("beforebegin", bar);
+    } else {
+      contentInner.insertAdjacentElement("beforeend", bar);
+    }
 
     bar.addEventListener("click", async (e) => {
       const t = e.target.closest("[data-action]");
