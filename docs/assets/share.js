@@ -70,12 +70,7 @@
       <span class="wc-sharebtn__hint">미리보기 제목은 페이지 제목으로 노출됩니다.</span>
     `;
 
-    const sourceMeta = contentInner.querySelector(".md-source-file");
-    if (sourceMeta) {
-      sourceMeta.insertAdjacentElement("beforebegin", bar);
-    } else {
-      contentInner.insertAdjacentElement("beforeend", bar);
-    }
+    contentInner.insertAdjacentElement("beforeend", bar);
 
     bar.addEventListener("click", async (e) => {
       const t = e.target.closest("[data-action]");
