@@ -1,0 +1,10 @@
+# WCAMPER Wiki (LLMs)
+사이트: https://wiki.wcamper.com/
+목적: 캠핑/오버랜딩 용어를 운영 가능한 정의(경계/판정/태그)로 정리한 공개 지식베이스.
+
+- 추천 시작점: https://wiki.wcamper.com/
+- 핵심 프레임: https://wiki.wcamper.com/concepts/axes/
+- 용어사전(예): https://wiki.wcamper.com/glossary/overlanding/
+
+Sitemap: https://wiki.wcamper.com/sitemap.xml
+피드백/정정 요청: mailto:wiki@wcamper.com
