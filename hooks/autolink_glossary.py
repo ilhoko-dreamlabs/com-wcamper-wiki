@@ -53,6 +53,50 @@ def _extract_h1(markdown: str) -> str:
             return line[2:].strip()
     return ""
 
+def _strip_inline_markdown(text: str) -> str:
+    text = re.sub(r"!\[([^\]]*)\]\([^)]+\)", r"\1", text or "")
+    text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
+    text = re.sub(r"[*_`~]+", "", text)
+    return _norm(text)
+
+def _extract_section_lead(markdown: str, headings: Tuple[str, ...]) -> str:
+    """
+    Extract the first prose line after a matching H2 heading.
+    """
+    lines = (markdown or "").splitlines()
+    in_section = False
+
+    for raw in lines:
+        line = raw.strip()
+        if line.startswith("## "):
+            title = _norm(line[3:])
+            in_section = title in headings
+            continue
+
+        if not in_section:
+            continue
+        if not line or line.startswith("#"):
+            continue
+
+        return _strip_inline_markdown(line.lstrip("- ").strip())
+
+    return ""
+
+def _ensure_social_description(markdown: str, page) -> None:
+    """
+    Populate page.meta.description for glossary-style pages when front matter
+    does not provide one. The template uses this for OG/Twitter previews.
+    """
+    try:
+        if page.meta.get("description"):
+            return
+    except Exception:
+        return
+
+    description = _extract_section_lead(markdown, ("한 줄 정의", "한 줄 요약"))
+    if description:
+        page.meta["description"] = description
+
 BOLD_TERM_RE = re.compile(r"^\s*-\s*\*\*(.+?)\*\*\s*[—–\-:]\s+", re.UNICODE)
 
 def _extract_bold_terms(markdown: str) -> List[str]:
@@ -246,6 +290,8 @@ def on_page_markdown(markdown, page, config, **kwargs):
     """
     Apply autolinking to every page.
     """
+    _ensure_social_description(markdown, page)
+
     try:
         current_url = "/" + page.url  # page.url like 'glossary/overlanding/'
         if not current_url.endswith("/"):

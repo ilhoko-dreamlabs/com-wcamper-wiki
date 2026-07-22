@@ -25,7 +25,15 @@
     {% set pdesc = page.meta.description %}
   {% endif %}
 
-  <meta name="description" content="{{ pdesc }}" />
+  {% set source_label = config.site_name ~ ' 출처' %}
+  {% set social_title = config.site_name %}
+  {% set social_desc = source_label ~ ' · ' ~ pdesc %}
+  {% if page and page.title and not page.is_homepage %}
+    {% set social_title = ptitle ~ ' | ' ~ config.site_name %}
+    {% set social_desc = source_label ~ ' · ' ~ ptitle ~ ': ' ~ pdesc %}
+  {% endif %}
+
+  <meta name="description" content="{{ social_desc | e }}" />
   <meta name="robots" content="index,follow" />
 
   {% if page and page.canonical_url %}
@@ -34,14 +42,14 @@
   {% endif %}
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="{{ config.site_name }}" />
-  <meta property="og:title" content="{{ ptitle }}" />
-  <meta property="og:description" content="{{ pdesc }}" />
+  <meta property="og:site_name" content="{{ source_label | e }}" />
+  <meta property="og:title" content="{{ social_title | e }}" />
+  <meta property="og:description" content="{{ social_desc | e }}" />
   <meta property="og:locale" content="ko_KR" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="{{ ptitle }}" />
-  <meta name="twitter:description" content="{{ pdesc }}" />
+  <meta name="twitter:title" content="{{ social_title | e }}" />
+  <meta name="twitter:description" content="{{ social_desc | e }}" />
 
   {# JSON-LD (WebSite/WebPage) #}
   <script type="application/ld+json">
